@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Template-Based Excel Export Module
+// Geoje Swimmers - Template-Based Excel Export Module
 // ==========================================================================
 
 const TEMPLATE_PATH = 'excel/2026년 제19회 거제시장배 전국마스터즈 수영대회_신청서.xlsx';

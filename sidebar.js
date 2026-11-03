@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Collapsible Sidebar Navigation & SPA Router Component
+// Geoje Swimmers - Collapsible Sidebar Navigation & SPA Router Component
 // 카테고리별 사이드바: 1.명부 / 2.훈련일지 / 3.대회기록 / 4.관리자 설정
 // ==========================================================================
 
@@ -33,15 +33,15 @@ export const SPA_ROUTES = {
   '#/competition-coach-meeting': { url: 'coach-meeting.html?v=20261024_08', title: '감독자회의요강', catId: 'cat-competition', itemId: 'coach-meeting' },
   '#/competition-live-student':  { url: 'live-schedule.html?div=student&v=20261026_15', title: '학생부 (24일)', catId: 'cat-competition', itemId: 'live-student' },
   '#/competition-live-adult':    { url: 'live-schedule.html?div=adult&v=20261026_15', title: '성인부 (25일)', catId: 'cat-competition', itemId: 'live-adult' },
-  '#/competition-result':                  { url: 'competition-result.html?div=student&tab=entry&v=20261026_15', title: '학생부 접수 분석', catId: 'cat-competition', itemId: 'comp-res-student-entry', div: 'student', tab: 'entry' },
-  '#/competition-result-student-entry':    { url: 'competition-result.html?div=student&tab=entry&v=20261026_15', title: '학생부 접수 분석', catId: 'cat-competition', itemId: 'comp-res-student-entry', div: 'student', tab: 'entry' },
-  '#/competition-result-student-progress': { url: 'competition-result.html?div=student&tab=progress&v=20261026_15', title: '학생부 진행 요약', catId: 'cat-competition', itemId: 'comp-res-student-progress', div: 'student', tab: 'progress' },
-  '#/competition-result-student-result':   { url: 'competition-result.html?div=student&tab=result&v=20261026_15', title: '학생부 결과 분석', catId: 'cat-competition', itemId: 'comp-res-student-result', div: 'student', tab: 'result' },
-  '#/competition-result-student-records':  { url: 'competition-result.html?div=student&tab=records&v=20261026_15', title: '학생부 기록지DB', catId: 'cat-competition', itemId: 'comp-res-student-records', div: 'student', tab: 'records' },
-  '#/competition-result-adult-entry':      { url: 'competition-result.html?div=adult&tab=entry&v=20261026_15', title: '성인부 접수 분석', catId: 'cat-competition', itemId: 'comp-res-adult-entry', div: 'adult', tab: 'entry' },
-  '#/competition-result-adult-progress':   { url: 'competition-result.html?div=adult&tab=progress&v=20261026_15', title: '성인부 진행 요약', catId: 'cat-competition', itemId: 'comp-res-adult-progress', div: 'adult', tab: 'progress' },
-  '#/competition-result-adult-result':     { url: 'competition-result.html?div=adult&tab=result&v=20261026_15', title: '성인부 결과 분석', catId: 'cat-competition', itemId: 'comp-res-adult-result', div: 'adult', tab: 'result' },
-  '#/competition-result-adult-records':    { url: 'competition-result.html?div=adult&tab=records&v=20261026_15', title: '성인부 기록지DB', catId: 'cat-competition', itemId: 'comp-res-adult-records', div: 'adult', tab: 'records' },
+  '#/competition-result':                  { url: 'competition-result.html?div=adult&tab=records&v=20261103_01', title: '성인부 기록지DB', catId: 'cat-competition', itemId: 'comp-res-adult-records', div: 'adult', tab: 'records' },
+  '#/competition-result-student-entry':    { url: 'competition-result.html?div=student&tab=entry&v=20261103_01', title: '학생부 접수 분석', catId: 'cat-competition', itemId: 'comp-res-student-entry', div: 'student', tab: 'entry' },
+  '#/competition-result-student-progress': { url: 'competition-result.html?div=student&tab=progress&v=20261103_01', title: '학생부 진행 요약', catId: 'cat-competition', itemId: 'comp-res-student-progress', div: 'student', tab: 'progress' },
+  '#/competition-result-student-result':   { url: 'competition-result.html?div=student&tab=result&v=20261103_01', title: '학생부 결과 분석', catId: 'cat-competition', itemId: 'comp-res-student-result', div: 'student', tab: 'result' },
+  '#/competition-result-student-records':  { url: 'competition-result.html?div=student&tab=records&v=20261103_01', title: '학생부 기록지DB', catId: 'cat-competition', itemId: 'comp-res-student-records', div: 'student', tab: 'records' },
+  '#/competition-result-adult-entry':      { url: 'competition-result.html?div=adult&tab=entry&v=20261103_01', title: '성인부 접수 분석', catId: 'cat-competition', itemId: 'comp-res-adult-entry', div: 'adult', tab: 'entry' },
+  '#/competition-result-adult-progress':   { url: 'competition-result.html?div=adult&tab=progress&v=20261103_01', title: '성인부 진행 요약', catId: 'cat-competition', itemId: 'comp-res-adult-progress', div: 'adult', tab: 'progress' },
+  '#/competition-result-adult-result':     { url: 'competition-result.html?div=adult&tab=result&v=20261103_01', title: '성인부 결과 분석', catId: 'cat-competition', itemId: 'comp-res-adult-result', div: 'adult', tab: 'result' },
+  '#/competition-result-adult-records':    { url: 'competition-result.html?div=adult&tab=records&v=20261103_01', title: '성인부 기록지DB', catId: 'cat-competition', itemId: 'comp-res-adult-records', div: 'adult', tab: 'records' },
   '#/admin-share':               { url: 'share.html?v=20261024_21', title: '홍보 및 공유', catId: 'cat-admin', itemId: 'admin-share' },
   '#/admin-settings':            { url: 'admin.html', title: '관리자 설정', catId: 'cat-admin', itemId: 'admin-settings', adminOnly: true }
 };
@@ -514,8 +514,8 @@ export function navigateToRoute(hash) {
       try {
         spaFrame.contentWindow.postMessage({
           type: 'GMDC_COMP_RESULT_NAV',
-          div: route.div || 'student',
-          tab: route.tab || 'entry',
+          div: route.div || 'adult',
+          tab: route.tab || 'records',
           hash,
           isAdmin: authModRef ? Boolean(authModRef.isAdmin()) : false
         }, '*');
@@ -558,7 +558,7 @@ function initSpaRouter() {
     return;
   }
 
-  // 초기 해시 판별 (2026/10/24: 학생부, 2026/10/25: 성인부, 그 외: 대회결과 > 학생부 > 접수 분석)
+  // 초기 해시 판별 (2026/10/24: 학생부, 2026/10/25: 성인부, 그 외 기본 보기: 대회결과 > 성인부 > 기록지DB)
   const now = new Date();
   const y = now.getFullYear();
   const m = now.getMonth() + 1;
@@ -567,7 +567,7 @@ function initSpaRouter() {
     ? '#/competition-live-student'
     : (y === 2026 && m === 10 && d === 25)
       ? '#/competition-live-adult'
-      : '#/competition-result-student-entry';
+      : '#/competition-result-adult-records';
   let currentHash = window.location.hash || defaultHash;
   if (!SPA_ROUTES[currentHash]) {
     currentHash = defaultHash;
@@ -631,8 +631,8 @@ function highlightMenuFromUrl() {
   const fullTarget = `${file}${search}`;
   if (file === 'competition-result.html') {
     const params = new URLSearchParams(search);
-    const div = params.get('div') === 'adult' ? 'adult' : 'student';
-    const tab = ['entry', 'progress', 'result', 'records'].includes(params.get('tab')) ? params.get('tab') : 'entry';
+    const div = params.get('div') === 'student' ? 'student' : 'adult';
+    const tab = ['entry', 'progress', 'result', 'records'].includes(params.get('tab')) ? params.get('tab') : 'records';
     highlightActiveItem(`comp-res-${div}-${tab}`, 'cat-competition');
     return;
   }

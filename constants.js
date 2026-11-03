@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Domain Constants (중앙 상수 파일)
+// Geoje Swimmers - Domain Constants (중앙 상수 파일)
 // Extracted from auth.js, attendance.js.
 // Edit here to affect all modules that import these values.
 // ==========================================================================

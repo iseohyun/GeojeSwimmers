@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Interactive Training Month Calendar Module
+// Geoje Swimmers - Interactive Training Month Calendar Module
 // Width-Constrained Responsive Calendar connected to Operation Logs
 // Real-time Firestore Sync & LocalStorage Cache-First Architecture
 // ==========================================================================
@@ -349,8 +349,8 @@ export function initCalendarListeners() {
         });
 
         const filename = isShowAllMonths 
-          ? `GMDC_거제오션_훈련일정표_8~10월_전체.jpg` 
-          : `GMDC_거제오션_훈련일정표_${currentYear}년_${currentMonth}월.jpg`;
+          ? `GeojeSwimmers_거제오션_훈련일정표_8~10월_전체.jpg` 
+          : `GeojeSwimmers_거제오션_훈련일정표_${currentYear}년_${currentMonth}월.jpg`;
 
         const link = document.createElement('a');
         link.download = filename;

@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Operation Logs (운영기록) Management Module
+// Geoje Swimmers - Operation Logs (운영기록) Management Module
 // Real-time Firestore Sync & LocalStorage Cache-First Architecture
 // Admin-Only Detailed View & Lock Enforcement
 // ==========================================================================

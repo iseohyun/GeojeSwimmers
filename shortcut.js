@@ -1,4 +1,4 @@
-// shortcut.js - GMDC 수영대회 단축키 모듈
+// shortcut.js - Geoje Swimmers 수영대회 단축키 모듈
 // 단축키:
 //   G: 성인부 이동 (스크롤 위치 유지)
 //   S: 학생부 이동 (스크롤 위치 유지)
@@ -161,5 +161,5 @@
     }
   });
 
-  console.log('%c[GMDC Shortcuts] 활성화: [G] 성인부, [S] 학생부, [T] 단체전, [I] 개인전 (스크롤 위치 보존)', 'color: #10b981; font-weight: bold;');
+  console.log('%c[Geoje Swimmers Shortcuts] 활성화: [G] 성인부, [S] 학생부, [T] 단체전, [I] 개인전 (스크롤 위치 보존)', 'color: #10b981; font-weight: bold;');
 })();

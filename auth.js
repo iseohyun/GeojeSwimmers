@@ -1,5 +1,5 @@
 // ==================================================================
-// GMDC Swim Club - Google Authentication & Role-Based Access Control
+// Geoje Swimmers - Google Authentication & Role-Based Access Control
 // ==================================================================
 
 import { firebaseApp } from "./firebase-config.js?v=20260909_03";

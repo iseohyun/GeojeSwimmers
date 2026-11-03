@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - 2026 거제시장배 전국마스터즈 수영대회 대회결과 통합 컨트롤러
+// Geoje Swimmers - 2026 거제시장배 전국마스터즈 수영대회 대회결과 통합 컨트롤러
 // 구조: 대회결과 > [학생부 / 성인부] > [접수 분석 / 진행 요약 / 결과 분석]
 // ==========================================================================
 
@@ -35,9 +35,9 @@ const STUDENT_STROKES = [
 
 const OUR_TEAMS = new Set(["거제몽꾸", "거제야르"]);
 
-// State (기본: 학생부 > 접수 분석)
-let currentDivision = "student"; // 'student' | 'adult'
-let currentSubTab = "entry";     // 'entry' | 'progress' | 'result'
+// State (기본: 성인부 > 기록지DB)
+let currentDivision = "adult";   // 'student' | 'adult'
+let currentSubTab = "records";   // 'entry' | 'progress' | 'result' | 'records'
 let summaryViewMode = "chart";   // 'chart' (기본) | 'table'
 let selectedTeamFilter = "all";  // 'all' | 'other_all' | 특정 팀명
 let selectedGenderFilter = "all";
@@ -5623,8 +5623,8 @@ function bindEvents() {
   window.addEventListener("message", (e) => {
     if (!e.data) return;
     if (e.data.type === "GMDC_COMP_RESULT_NAV") {
-      const nextDiv = e.data.div === "adult" ? "adult" : "student";
-      const nextTab = ["entry", "progress", "result", "records"].includes(e.data.tab) ? e.data.tab : "entry";
+      const nextDiv = e.data.div === "student" ? "student" : "adult";
+      const nextTab = ["entry", "progress", "result", "records"].includes(e.data.tab) ? e.data.tab : "records";
       if (typeof e.data.isAdmin === "boolean") {
         isCurrentUserAdmin = e.data.isAdmin;
         if (!isCurrentUserAdmin) isAdultEditMode = false;
@@ -6184,13 +6184,13 @@ function initFromUrl() {
   if (divParam === "adult" || divParam === "student") {
     currentDivision = divParam;
   } else {
-    currentDivision = "student";
+    currentDivision = "adult";
   }
 
   if (["entry", "progress", "result", "records"].includes(tabParam)) {
     currentSubTab = tabParam;
   } else {
-    currentSubTab = "entry";
+    currentSubTab = "records";
   }
 }
 

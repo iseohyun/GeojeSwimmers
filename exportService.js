@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Roster Export Service (명단 내보내기 서비스)
+// Geoje Swimmers - Roster Export Service (명단 내보내기 서비스)
 // Handles formatted export to TXT, Excel (CSV with UTF-8 BOM), PDF, and Images (JPG/PNG).
 // ==========================================================================
 
@@ -36,10 +36,10 @@ export function exportRosterAsTxt({
   let fileName = '';
 
   if (viewMode === 'simple') {
-    fileName = `GMDC_거제오션_훈련출석명단_간단히_${dateStr}.txt`;
+    fileName = `GeojeSwimmers_거제오션_훈련출석명단_간단히_${dateStr}.txt`;
     lines = [
       '========================================================================',
-      '             GMDC 거제오션 2026 수영대회 훈련 출석부 (간단히)',
+      '             Geoje Swimmers 거제오션 2026 수영대회 훈련 출석부 (간단히)',
       `             출력일시: ${nowStr} | 총원: ${list.length}명`,
       `             기준 훈련일: ${nearestDate.label} (${nearestDate.title})`,
       '========================================================================',
@@ -62,11 +62,11 @@ export function exportRosterAsTxt({
     lines.push(`※ 훈련 장소: 거제 동부학생수영장 | 워밍업 06:30 ~ / 훈련 08:30 ~`);
   } else {
     // Detailed Mode
-    fileName = `GMDC_거제오션_훈련출석명단_자세히_${dateStr}.txt`;
+    fileName = `GeojeSwimmers_거제오션_훈련출석명단_자세히_${dateStr}.txt`;
     const dateHeaders = attendanceDates.map(d => d.label.padEnd(5, ' ')).join(' | ');
     lines = [
       '========================================================================================',
-      '                   GMDC 거제오션 2026 수영대회 훈련 출석부 (자세히)',
+      '                   Geoje Swimmers 거제오션 2026 수영대회 훈련 출석부 (자세히)',
       `                   출력일시: ${nowStr} | 총원: ${list.length}명`,
       '========================================================================================',
       `순번 | 구분 | 소속팀 | 성명   | 생년월일 | 신청종목                     | ${dateHeaders}`,
@@ -128,7 +128,7 @@ export function exportRosterAsExcel({
   let fileName = '';
 
   if (viewMode === 'simple') {
-    fileName = `GMDC_거제오션_훈련출석명단_간단히_${dateStr}.csv`;
+    fileName = `GeojeSwimmers_거제오션_훈련출석명단_간단히_${dateStr}.csv`;
     headers = ['순번', '선수명', '생년월일', `${nearestDate.label} 출석시간`];
 
     rows = list.map((s, idx) => {
@@ -143,7 +143,7 @@ export function exportRosterAsExcel({
     });
   } else {
     // Detailed Mode
-    fileName = `GMDC_거제오션_훈련출석명단_자세히_${dateStr}.csv`;
+    fileName = `GeojeSwimmers_거제오션_훈련출석명단_자세히_${dateStr}.csv`;
     const dateColHeaders = attendanceDates.map(d => `${d.label}`);
     headers = ['순번', '구분', '소속팀', '선수명', '생년월일', '신청종목', ...dateColHeaders, '출석횟수'];
 
@@ -240,7 +240,7 @@ export async function captureTableAsImage({
     const imgData = isJpg ? canvas.toDataURL(mimeType, EXPORT_JPEG_QUALITY) : canvas.toDataURL(mimeType);
     const a = document.createElement('a');
     a.href = imgData;
-    a.download = `GMDC_거제오션_훈련출석명단_${viewLabel}_${dateStr}.${ext}`;
+    a.download = `GeojeSwimmers_거제오션_훈련출석명단_${viewLabel}_${dateStr}.${ext}`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

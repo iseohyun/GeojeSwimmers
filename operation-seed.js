@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Common Operation Logs Seed Data & Shared Utilities
+// Geoje Swimmers - Common Operation Logs Seed Data & Shared Utilities
 // Single Source of Truth for Default Seed Data & Common Helpers
 // ==========================================================================
 

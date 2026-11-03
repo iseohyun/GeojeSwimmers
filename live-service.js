@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Real-time Competition Live Service & Estimation Engine
+// Geoje Swimmers - Real-time Competition Live Service & Estimation Engine
 // 대회 당일 실시간 경기 순서, 시간 추론, 로컬 우선(Offline-First) & 스마트 병합 서비스
 // ==========================================================================
 

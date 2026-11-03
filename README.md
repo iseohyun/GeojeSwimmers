@@ -1,4 +1,4 @@
-# GMDC 수영 기록 관리 시스템 (Swim Records Manager)
+# Geoje Swimmers 수영 기록 관리 시스템 (Swim Records Manager)
 
 수영 클럽 회원의 종목별 기록(핀접영, 핀자유, 자유형, 배영, 평영, 접영)을 관리하고 실시간으로 편집할 수 있는 웹 애플리케이션입니다.
 

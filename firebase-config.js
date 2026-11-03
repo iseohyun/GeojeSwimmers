@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Firebase App Singleton
+// Geoje Swimmers - Firebase App Singleton
 // Single source of truth for Firebase initialization.
 // All other modules import { firebaseApp } from here instead of calling
 // initializeApp() themselves.

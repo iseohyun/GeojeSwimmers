@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Swimmer Domain Service (선수 데이터 및 도메인 로직)
+// Geoje Swimmers - Swimmer Domain Service (선수 데이터 및 도메인 로직)
 // Pure domain functions for swimmer normalization, filtering, relay mapping,
 // and match participation check. No direct DOM dependencies.
 // ==========================================================================

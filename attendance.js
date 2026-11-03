@@ -1,5 +1,5 @@
 // ==========================================================================
-// GMDC Swim Club - Training Attendance Module (훈련 출석부)
+// Geoje Swimmers - Training Attendance Module (훈련 출석부)
 // View & Controller logic coordinating UI, Firebase Realtime Sync, and Modals.
 // ==========================================================================
 

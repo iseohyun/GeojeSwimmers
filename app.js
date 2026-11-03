@@ -1,5 +1,5 @@
 /**
- * GMDC 수영 기록 및 대회 출전 관리 시스템
+ * Geoje Swimmers 수영 기록 및 대회 출전 관리 시스템
  * Firebase Cloud Firestore 실시간 연동, 계영 최적 조합 연산, 출전 종목 현황 매트릭스
  */
 
@@ -582,7 +582,7 @@ function init() {
       }
     });
   }
-  console.log(`%c[GMDC Swim] App Version: ${APP_VERSION}`, 'color: #0284c7; font-weight: bold; font-size: 12px;');
+  console.log(`%c[Geoje Swimmers] App Version: ${APP_VERSION}`, 'color: #0284c7; font-weight: bold; font-size: 12px;');
   initAuth({
     showToast: showToast,
     onAuthChange: () => {
@@ -1985,7 +1985,7 @@ async function compareHistoryWithCurrentRecords() {
       timestamp: new Date().toISOString()
     };
 
-    console.group(`🔍 [GMDC] 최후 스냅샷 기준 히스토리 정합성 검증 (${new Date().toLocaleTimeString('ko-KR')})`);
+    console.group(`🔍 [Geoje Swimmers] 최후 스냅샷 기준 히스토리 정합성 검증 (${new Date().toLocaleTimeString('ko-KR')})`);
     console.log(`📷 기준 스냅샷: ${baseTitle} (${baseRecords.length}명)`);
     console.log(`📜 스냅샷 이후 히스토리 로그: ${recentLogs.length}건`);
     console.log(`🎯 데이터 일치율: ${matchRate}% (${matchingFieldChecks}/${totalFieldChecks}개 필드 일치)`);
@@ -3960,7 +3960,7 @@ function getPureRecommendedRoster(team = 'A') {
       });
     }
   } catch (e) {
-    console.warn('[GMDC] 추천 조합 계산 중 오류:', e);
+    console.warn('[Geoje Swimmers] 추천 조합 계산 중 오류:', e);
   }
 
   _pureRecommendedCache[team] = rec;

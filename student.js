@@ -415,7 +415,7 @@ const eventsTableBody = document.getElementById('eventsTableBody');
 
 function init() {
   window.__GMDC_VERSION__ = APP_VERSION;
-  console.log(`%c[GMDC Swim Students] App Version: ${APP_VERSION}`, 'color: #0284c7; font-weight: bold; font-size: 12px;');
+  console.log(`%c[Geoje Swimmers Students] App Version: ${APP_VERSION}`, 'color: #0284c7; font-weight: bold; font-size: 12px;');
   initAuth({
     showToast: showToast,
     onAuthChange: () => {
@@ -1636,7 +1636,7 @@ async function compareHistoryWithCurrentRecords() {
       timestamp: new Date().toISOString()
     };
 
-    console.group(`🔍 [GMDC 학생부] 최후 스냅샷 기준 히스토리 정합성 검증 (${new Date().toLocaleTimeString('ko-KR')})`);
+    console.group(`🔍 [Geoje Swimmers 학생부] 최후 스냅샷 기준 히스토리 정합성 검증 (${new Date().toLocaleTimeString('ko-KR')})`);
     console.log(`📷 기준 스냅샷: ${baseTitle} (${baseRecords.length}명)`);
     console.log(`📜 스냅샷 이후 히스토리 로그: ${recentLogs.length}건`);
     console.log(`🎯 데이터 일치율: ${matchRate}% (${matchingFieldChecks}/${totalFieldChecks}개 필드 일치)`);
@@ -4231,7 +4231,7 @@ function exportToCsv() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.setAttribute('href', url);
-  link.setAttribute('download', `GMDC_수영_기록관리표_학생부_${new Date().toISOString().slice(0, 10)}.csv`);
+  link.setAttribute('download', `GeojeSwimmers_수영_기록관리표_학생부_${new Date().toISOString().slice(0, 10)}.csv`);
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
